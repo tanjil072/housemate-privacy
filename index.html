@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – HouseMate</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #312e81;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e0e7ff;
+    }
+
+    p { margin-bottom: 12px; font-size: 0.95rem; color: #334155; }
+
+    ul {
+      margin: 8px 0 12px 20px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .badge {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 99px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .updated {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #94a3b8;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HouseMate — Privacy Policy</h1>
+  <p class="updated">Last updated: June 13, 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to <strong>HouseMate</strong> ("we", "our", or "us"). HouseMate is a shared
+      household and mess management application developed by ShadowLab
+      (<a href="mailto:binaryspectra@gmail.com">binaryspectra@gmail.com</a>).
+    </p>
+    <p>
+      This Privacy Policy explains what information we collect, how we use it, and your rights
+      regarding your data when you use the HouseMate mobile application
+      (<code>com.shadowlab.housemate</code>).
+    </p>
+    <p>
+      By using HouseMate, you agree to the collection and use of information as described in
+      this policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Information We Collect</h2>
+    <p>We collect the following information when you use HouseMate:</p>
+
+    <p><strong>Account &amp; Identity</strong></p>
+    <ul>
+      <li>Full name</li>
+      <li>Phone number</li>
+      <li>PIN (used for login — stored securely, never in plain text)</li>
+      <li>User role (superuser, manager, or member)</li>
+    </ul>
+
+    <p><strong>Mess / Household Data</strong></p>
+    <ul>
+      <li>Mess name and unique mess code</li>
+      <li>Daily meal entries (morning and night meals per member)</li>
+      <li>Weekly meal menus</li>
+      <li>Meal schedule preferences per member</li>
+    </ul>
+
+    <p><strong>Financial Data</strong></p>
+    <ul>
+      <li>Deposits made by members</li>
+      <li>Expense records (bazar, gas, electricity, water, rent, other)</li>
+      <li>Calculated balances per member</li>
+    </ul>
+
+    <p><strong>Usage Data</strong></p>
+    <ul>
+      <li>Group chat messages within your mess</li>
+      <li>Duty assignments and status updates</li>
+      <li>Stock/inventory items added by members</li>
+      <li>Notice board content</li>
+      <li>Activity logs within the mess</li>
+    </ul>
+
+    <p><strong>Device Data</strong></p>
+    <ul>
+      <li>Firebase Cloud Messaging (FCM) push token — used solely to deliver notifications to your device</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the collected information to:</p>
+    <ul>
+      <li>Authenticate you securely using your phone number and PIN</li>
+      <li>Display your mess dashboard, meal records, and financial balance</li>
+      <li>Calculate fair cost splits among mess members</li>
+      <li>Generate monthly financial reports</li>
+      <li>Send push notifications (meal reminders, bazar alerts, balance warnings)</li>
+      <li>Enable real-time group chat within your mess</li>
+      <li>Allow managers and superusers to manage members and duties</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising or sell it to any third party.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Data Storage &amp; Security</h2>
+    <p>
+      All mess data (users, meals, transactions, chat messages) is stored securely on
+      <strong>Supabase</strong>, a cloud database platform that uses industry-standard
+      encryption in transit (TLS/HTTPS) and at rest.
+    </p>
+    <p>
+      Push notification tokens are managed through <strong>Firebase Cloud Messaging (FCM)</strong>
+      by Google. We only use FCM to deliver notifications — we do not share tokens with
+      any other service.
+    </p>
+    <p>
+      PINs are never stored or transmitted in plain text. Session data is stored locally
+      on your device using AsyncStorage and is cleared on logout.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>5. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or trade your personal information.</p>
+    <p>Your data is shared only with the following service providers, strictly to operate the app:</p>
+    <ul>
+      <li>
+        <span class="badge">Supabase</span>
+        Cloud database &amp; backend — stores mess, user, meal, and transaction data.
+        <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>
+      </li>
+      <li>
+        <span class="badge">Firebase (Google)</span>
+        Push notification delivery only.
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>
+      </li>
+    </ul>
+    <p>
+      Within your mess, all members can see shared data such as meal records, expense logs,
+      duty assignments, notices, and chat messages. This is core to the app's functionality.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Retention</h2>
+    <p>
+      Your data is retained as long as your mess exists and you remain a member. If a
+      superuser deletes a member account, that member's data is removed from the mess.
+    </p>
+    <p>
+      If you wish to have all your data permanently deleted, please contact us at
+      <a href="mailto:binaryspectra@gmail.com">binaryspectra@gmail.com</a> and we will
+      process your request within 7 business days.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>7. Push Notifications</h2>
+    <p>HouseMate may send push notifications for:</p>
+    <ul>
+      <li>Meal reminders (morning and night)</li>
+      <li>Low balance alerts</li>
+      <li>Bazar expense submissions</li>
+      <li>Duty updates</li>
+    </ul>
+    <p>
+      You can disable notifications at any time from your device's system settings
+      (Settings → Apps → HouseMate → Notifications).
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>8. Children's Privacy</h2>
+    <p>
+      HouseMate is not intended for use by children under the age of 13. We do not
+      knowingly collect personal information from children. If you believe a child has
+      provided us with personal data, please contact us so we can remove it.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>9. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and data</li>
+      <li>Withdraw consent for push notifications at any time via device settings</li>
+    </ul>
+    <p>
+      To exercise any of these rights, contact us at
+      <a href="mailto:binaryspectra@gmail.com">binaryspectra@gmail.com</a>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be posted on
+      this page with an updated date at the top. We encourage you to review this page
+      periodically.
+    </p>
+    <p>
+      Continued use of the app after changes are posted constitutes your acceptance of
+      the updated policy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
+    <ul>
+      <li><strong>Developer:</strong> ShadowLab</li>
+      <li><strong>Email:</strong> <a href="mailto:binaryspectra@gmail.com">binaryspectra@gmail.com</a></li>
+      <li><strong>App:</strong> HouseMate (<code>com.shadowlab.housemate</code>)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 ShadowLab · HouseMate · All rights reserved
+</footer>
+
+</body>
+</html>
